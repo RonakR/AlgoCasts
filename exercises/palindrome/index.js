@@ -7,6 +7,18 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+// My iterative and the First soln
+function palindrome(str) {
+    const reversed = str.split('').reverse().join('');
+    return str === reversed;
+}
+
+// Second Soln
+// Every array method
+// function palindrome(str) {
+//     return str.split('').every((char, i) => {
+//         return char === str.charAt(str.length-i-1);
+//     });
+// }
 
 module.exports = palindrome;
