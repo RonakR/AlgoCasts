@@ -19,6 +19,8 @@
 //     return parseInt(isNegative ? '-'+reversed : reversed);
 // }
 
+// First Soln:
+// Using Math.Sign
 function reverseInt(n) {
     const str = n.toString().split('').reverse().join('');
 
